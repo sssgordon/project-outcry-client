@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import GoogleLogin from "react-google-login";
+import { connect } from "react-redux";
+import { googleLoginAction } from "../actions/users";
 
-export default class GoogleLoginButton extends Component {
+class GoogleLoginButton extends Component {
   state = {
     email: "",
     givenName: "",
@@ -21,6 +23,13 @@ export default class GoogleLoginButton extends Component {
         accessToken
       });
       // console.log("state test", this.state);
+      this.props.googleLoginAction({
+        givenName: this.state.givenName,
+        email: this.state.email,
+        accessToken: this.state.accessToken
+      });
+
+      //this.props.history.push(redirect)
     };
     return (
       <GoogleLogin // To use this feature, I need to put the client website into google dev console credentials
@@ -33,3 +42,5 @@ export default class GoogleLoginButton extends Component {
     );
   }
 }
+
+export default connect(null, { googleLoginAction })(GoogleLoginButton);

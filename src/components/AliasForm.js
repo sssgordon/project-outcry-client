@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { createAlias } from "../actions/alias";
+import { createAlias, createDialogflowEntity } from "../actions/alias";
 
 class AliasForm extends Component {
   state = {
@@ -17,6 +17,7 @@ class AliasForm extends Component {
   onSubmit = event => {
     event.preventDefault();
     this.props.createAlias(this.state, this.props.email);
+    this.props.createDialogflowEntity(this.state.alias, this.props.accessToken);
     this.setState({ alias: "" });
   };
 
@@ -36,7 +37,13 @@ class AliasForm extends Component {
 }
 
 const mapStateToProps = reduxState => {
-  return { email: reduxState.user.email };
+  return {
+    email: reduxState.user.email,
+    accessToken: reduxState.user.accessToken
+  };
 };
 
-export default connect(mapStateToProps, { createAlias })(AliasForm);
+export default connect(mapStateToProps, {
+  createAlias,
+  createDialogflowEntity
+})(AliasForm);

@@ -21,6 +21,16 @@ export const signUp = data => () => {
     .catch(console.error);
 };
 
+export const updateUserDetails = (data, email) => () => {
+  request
+    .put(`${baseUrl}/users/${email}/details`)
+    .send(data)
+    .then(response => {
+      console.log("update details response", response);
+    })
+    .catch(console.error);
+};
+
 // export const LOGIN = "LOGIN";
 // function doLogin(payload) {
 //   return {

@@ -5,7 +5,7 @@ const baseUrl = "http://localhost:4000";
 // create alias in user in db
 export const createAlias = (aliasObj, email) => () => {
   request
-    .put(`${baseUrl}/users/${email}`)
+    .put(`${baseUrl}/users/${email}/alias`)
     .send(aliasObj)
     .then(response => {
       console.log("create alias response", response);

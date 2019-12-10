@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { login } from "./actions/users";
+import { test } from "./actions/users";
 import GoogleLoginButton from "./components/GoogleLoginButton";
 import AliasForm from "./components/AliasForm";
 
 class App extends Component {
   onClick = event => {
     event.preventDefault();
-    this.props.login();
+    this.props.test();
   };
 
   render() {
@@ -21,4 +21,4 @@ class App extends Component {
   }
 }
 
-export default connect(null, { login })(App);
+export default connect(null, { test })(App);

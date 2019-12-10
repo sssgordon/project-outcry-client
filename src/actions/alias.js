@@ -13,7 +13,7 @@ export const createAlias = (aliasObj, email) => () => {
     .catch(console.error);
 };
 
-// create alias entity in dialogflow
+// create alias (name) entity in dialogflow
 export const createDialogflowEntity = (alias, accessToken) => () => {
   request
     .post(

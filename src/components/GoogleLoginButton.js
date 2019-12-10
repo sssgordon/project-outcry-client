@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GoogleLogin from "react-google-login";
 import { connect } from "react-redux";
-import { googleLoginAction } from "../actions/users";
+import { googleLoginAction, signUp } from "../actions/users";
 
 class GoogleLoginButton extends Component {
   state = {
@@ -23,12 +23,14 @@ class GoogleLoginButton extends Component {
         accessToken
       });
       // console.log("state test", this.state);
+
+      this.props.signUp(this.state);
+
       this.props.googleLoginAction({
         givenName: this.state.givenName,
         email: this.state.email,
         accessToken: this.state.accessToken
       });
-
       //this.props.history.push(redirect)
     };
     return (
@@ -43,4 +45,4 @@ class GoogleLoginButton extends Component {
   }
 }
 
-export default connect(null, { googleLoginAction })(GoogleLoginButton);
+export default connect(null, { googleLoginAction, signUp })(GoogleLoginButton);

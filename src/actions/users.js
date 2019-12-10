@@ -11,13 +11,23 @@ export function googleLoginAction(payload) {
   };
 }
 
-export const LOGIN = "LOGIN";
-function doLogin(payload) {
-  return {
-    type: LOGIN,
-    payload
-  };
-}
+export const signUp = data => dispatch => {
+  request
+    .post(`${baseUrl}/users`)
+    .send(data)
+    .then(response => {
+      console.log("Sign up response test", response);
+    })
+    .catch(console.error);
+};
+
+// export const LOGIN = "LOGIN";
+// function doLogin(payload) {
+//   return {
+//     type: LOGIN,
+//     payload
+//   };
+// }
 
 //Works!
 export const login = () => dispatch => {

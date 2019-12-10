@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { login } from "./actions/users";
 import GoogleLoginButton from "./components/GoogleLoginButton";
+import AliasForm from "./components/AliasForm";
 
 class App extends Component {
   onClick = event => {
@@ -14,6 +15,7 @@ class App extends Component {
       <Fragment>
         <button onClick={this.onClick}>Test</button>
         <GoogleLoginButton />
+        <AliasForm />
       </Fragment>
     );
   }

@@ -11,12 +11,12 @@ export function googleLoginAction(payload) {
   };
 }
 
-export const signUp = data => dispatch => {
+export const signUp = data => () => {
   request
     .post(`${baseUrl}/users`)
     .send(data)
     .then(response => {
-      console.log("Sign up response test", response);
+      // console.log("Sign up response test", response);
     })
     .catch(console.error);
 };

@@ -56,6 +56,7 @@ class DetailsFormContainer extends Component {
   componentDidUpdate(prevProps, prevState) {
     // checkin to see if we have a user with prior information
     // We only want to check it once so don't setState if the user is the same user as before
+    // easy way: make the fetch request a "fetch" and then setState() in the .then()
     if (this.props.user.address && prevProps.user !== this.props.user) {
       this.setState({ ...this.state, ...this.props.user, loading: false });
     }

@@ -31,7 +31,7 @@ function setUserDetails(payload) {
 }
 
 export const getUserDetails = email => dispatch => {
-  console.log(email);
+  // console.log(email);
   request
     .get(`${baseUrl}/users/${email}`)
     .then(response => {

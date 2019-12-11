@@ -8,7 +8,7 @@ export const createAlias = (aliasObj, email) => () => {
     .put(`${baseUrl}/users/${email}/alias`)
     .send(aliasObj)
     .then(response => {
-      console.log("create alias response", response);
+      // console.log("create alias response", response);
     })
     .catch(console.error);
 };

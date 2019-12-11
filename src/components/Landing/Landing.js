@@ -20,10 +20,14 @@ class Landing extends Component {
     );
 
     return (
-      <div>
-        <GoogleLoginButton />
-        {detailsLink}
-        {aliasLink}
+      <div id="landing-wrapper-parent">
+        <div id="landing-wrapper">
+          <div id="login-btn-wrapper">
+            <GoogleLoginButton id="login-btn" />
+            {detailsLink}
+            {aliasLink}
+          </div>
+        </div>
       </div>
     );
   }

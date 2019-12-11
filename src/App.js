@@ -9,10 +9,12 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div id="app-background">
-        <Route exact path="/details" component={DetailsFormContainer} />
-        <Route exact path="/alias" component={AliasFormContainer} />
-        <Route exact path="/" component={Landing} />
+      <div id="background">
+        <div id="background-overlay">
+          <Route exact path="/details" component={DetailsFormContainer} />
+          <Route exact path="/alias" component={AliasFormContainer} />
+          <Route exact path="/" component={Landing} />
+        </div>
       </div>
     );
   }

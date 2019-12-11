@@ -1,4 +1,8 @@
-#app-background {
+body {
+  margin: 0;
+}
+
+#background {
   background-image: url("./assets/test-background.jpg");
   background-size: cover;
   background-position: center center;
@@ -6,5 +10,15 @@
   top: 0;
   bottom: 0;
   height: 100vh;
-  z-index: -10;
+  z-index: 5;
+}
+
+#background-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }

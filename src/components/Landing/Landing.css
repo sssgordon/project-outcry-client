@@ -56,9 +56,20 @@
   font-family: "Couplet";
 }
 
+.hidden {
+  opacity: 0;
+}
+.fade-in {
+  color: white;
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
+
 @font-face {
   font-family: "Couplet";
   src: local("Couplet"),
     url("../../assets/Couplets-on-the-Spring-Festival-Font-Traditional-Chinese.ttf")
       format("truetype");
 }
+
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap");

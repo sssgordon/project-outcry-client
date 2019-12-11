@@ -8,27 +8,27 @@ class Landing extends Component {
   render() {
     const { user } = this.props;
 
-    const detailsLink = user.email && (
-      <Link to="/details">
-        <p>Details</p>
+    const detailsLink = (
+      <Link to="/details" style={{ textDecoration: "none" }}>
+        <p className={`${user.email ? "fade-in" : "hidden"}`}>Details</p>
       </Link>
     );
-    const aliasLink = user.email && (
-      <Link to="/alias">
-        <p>Alias</p>
-      </Link>
-    );
+    // const aliasLink = user.email && (
+    //   <Link to="/alias">
+    //     <p>Alias</p>
+    //   </Link>
+    // );
 
     return (
       <div id="landing-wrapper-parent">
         <div id="landing-wrapper">
           <div id="login-btn-wrapper">
             <p>登入帳號：</p>
-            <GoogleLoginButton id="login-btn" />
-            {detailsLink}
-            {aliasLink}
+            <GoogleLoginButton />
           </div>
         </div>
+        {detailsLink}
+        {/* {aliasLink} */}
       </div>
     );
   }

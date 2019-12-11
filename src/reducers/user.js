@@ -3,7 +3,7 @@ export default (state = {}, action = {}) => {
     case "GOOGLE_LOGIN":
       return action.payload;
     case "SET_USER_DETAILS":
-      return action.payload;
+      return { ...state, ...action.payload };
     default:
       return state;
   }

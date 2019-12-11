@@ -37,7 +37,7 @@ class DetailsFormContainer extends Component {
 
     this.props.getUserDetails(this.props.user.email);
 
-    console.log("after thunk", this.state);
+    // console.log("after thunk", this.state);
     // this.setState({
     //   hkIdNumber: hkIdNumber,
     //   gender: gender,

@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { test } from "./actions/users";
-import GoogleLoginButton from "./components/GoogleLoginButton";
-import AliasForm from "./components/AliasForm";
+import AliasFormContainer from "./components/AliasForm";
 import DetailsFormContainer from "./components/DetailsForm";
+import { Route, Link } from "react-router-dom";
+import Landing from "./components/Landing/Landing";
 
 class App extends Component {
   onClick = event => {
@@ -15,9 +16,10 @@ class App extends Component {
     return (
       <Fragment>
         <button onClick={this.onClick}>Test</button>
-        <GoogleLoginButton />
-        <AliasForm />
-        <DetailsFormContainer />
+        {/* <Landing /> */}
+        <Route exact path="/details" component={DetailsFormContainer} />
+        <Route exact path="/alias" component={AliasFormContainer} />
+        <Route exact path="/" component={Landing} />
       </Fragment>
     );
   }

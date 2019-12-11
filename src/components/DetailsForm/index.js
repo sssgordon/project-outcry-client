@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import DetailsForm from "./DetailsForm";
-import { updateUserDetails } from "../../actions/users";
+import { updateUserDetails, getUserDetails } from "../../actions/users";
 
 class DetailsFormContainer extends Component {
   state = {
@@ -14,7 +15,13 @@ class DetailsFormContainer extends Component {
     emergencyContactNumber: "",
     lawyerEmail: "",
     otherEmail: "",
-    emailPassword: ""
+    emailPassword: "",
+    loading: true
+  };
+
+  componentDidMount = () => {
+    this.props.getUserDetails(this.props.email);
+    this.setState({ loading: false });
   };
 
   onChange = event => {
@@ -30,12 +37,18 @@ class DetailsFormContainer extends Component {
   };
 
   render() {
+    if (this.state.loading) {
+      return <p>Loading...</p>;
+    }
     return (
-      <DetailsForm
-        onChange={this.onChange}
-        onSubmit={this.onSubmit}
-        values={this.state}
-      />
+      <Fragment>
+        <DetailsForm
+          onChange={this.onChange}
+          onSubmit={this.onSubmit}
+          values={this.state}
+        />
+        <Link to="/">Landing</Link>
+      </Fragment>
     );
   }
 }
@@ -44,6 +57,6 @@ const mapStateToProps = reduxState => {
   return { email: reduxState.user.email };
 };
 
-export default connect(mapStateToProps, { updateUserDetails })(
+export default connect(mapStateToProps, { updateUserDetails, getUserDetails })(
   DetailsFormContainer
 );

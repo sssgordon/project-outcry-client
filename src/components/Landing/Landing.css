@@ -17,7 +17,6 @@
   position: absolute;
   width: 300px;
   height: 200px;
-  /* padding: 10px; */
 
   position: absolute;
   top: 50%;
@@ -64,6 +63,20 @@
   animation: fadeIn;
   animation-duration: 1.5s;
 }
+
+#outcry {
+  position: absolute;
+  bottom: 105px;
+  right: 130px;
+  width: 400px;
+}
+
+/* .outcry {
+  position: absolute;
+  z-index: 100px;
+  width: 400px;
+  background: url("../../assets/outcry-white.png");
+} */
 
 @font-face {
   font-family: "Couplet";

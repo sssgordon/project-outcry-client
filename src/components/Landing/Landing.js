@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import GoogleLoginButton from "../GoogleLoginButton";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import outcryWhite from "../../assets/outcry-white.png";
 import "./Landing.css";
 
 class Landing extends Component {
@@ -20,16 +21,19 @@ class Landing extends Component {
     // );
 
     return (
-      <div id="landing-wrapper-parent">
-        <div id="landing-wrapper">
-          <div id="login-btn-wrapper">
-            <p>登入帳號：</p>
-            <GoogleLoginButton />
+      <Fragment>
+        <div id="landing-wrapper-parent">
+          <div id="landing-wrapper">
+            <img id="outcry" src={outcryWhite} alt="title" />
+            <div id="login-btn-wrapper">
+              <p>登入帳號：</p>
+              <GoogleLoginButton />
+            </div>
           </div>
+          {detailsLink}
+          {/* {aliasLink} */}
         </div>
-        {detailsLink}
-        {/* {aliasLink} */}
-      </div>
+      </Fragment>
     );
   }
 }

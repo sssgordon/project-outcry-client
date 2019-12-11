@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { createAlias, createDialogflowEntity } from "../actions/alias";
+import { createAlias, createDialogflowEntity } from "../../actions/alias";
+import AliasForm from "./AliasForm";
 
-class AliasForm extends Component {
+class AliasFormContainer extends Component {
   state = {
     alias: ""
   };
@@ -23,15 +24,13 @@ class AliasForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <input
+      <Fragment>
+        <AliasForm
+          onSubmit={this.onSubmit}
           onChange={this.onChange}
           value={this.state.alias}
-          name="alias"
-          placeholder="Enter your alias"
         />
-        <button type="submit">Submit</button>
-      </form>
+      </Fragment>
     );
   }
 }
@@ -46,4 +45,4 @@ const mapStateToProps = reduxState => {
 export default connect(mapStateToProps, {
   createAlias,
   createDialogflowEntity
-})(AliasForm);
+})(AliasFormContainer);

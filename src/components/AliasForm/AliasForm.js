@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function AliasForm(props) {
+  // create button and update button, depends on weather redux state has user alias
+
   return (
     <form onSubmit={props.onSubmit}>
       <input

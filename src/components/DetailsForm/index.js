@@ -16,13 +16,50 @@ class DetailsFormContainer extends Component {
     lawyerEmail: "",
     otherEmail: "",
     emailPassword: "",
-    loading: true
+    loading: null
   };
 
   componentDidMount = () => {
-    this.props.getUserDetails(this.props.email);
-    this.setState({ loading: false });
+    // const {
+    //   email,
+    //   hkIdNumber,
+    //   gender,
+    //   dateOfBirth,
+    //   address,
+    //   phoneNumber,
+    //   emergencyContact,
+    //   emergencyContactNumber,
+    //   lawyerEmail,
+    //   otherEmail,
+    //   emailPassword,
+    //   getUserDetails
+    // } = this.props;
+
+    this.props.getUserDetails(this.props.user.email);
+
+    console.log("after thunk", this.state);
+    // this.setState({
+    //   hkIdNumber: hkIdNumber,
+    //   gender: gender,
+    //   dateOfBirth: dateOfBirth,
+    //   address: address,
+    //   phoneNumber: phoneNumber,
+    //   emergencyContact: emergencyContact,
+    //   emergencyContactNumber: emergencyContactNumber,
+    //   lawyerEmail: lawyerEmail,
+    //   otherEmail: otherEmail,
+    //   emailPassword: emailPassword,
+    //   loading: false
+    // });
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    // checkin to see if we have a user with prior information
+    // We only want to check it once so don't setState if the user is the same user as before
+    if (this.props.user.address && prevProps.user !== this.props.user) {
+      this.setState({ ...this.state, ...this.props.user, loading: false });
+    }
+  }
 
   onChange = event => {
     this.setState({
@@ -33,7 +70,7 @@ class DetailsFormContainer extends Component {
   onSubmit = event => {
     event.preventDefault();
 
-    this.props.updateUserDetails(this.state, this.props.email);
+    this.props.updateUserDetails(this.state, this.props.user.email);
   };
 
   render() {
@@ -54,7 +91,9 @@ class DetailsFormContainer extends Component {
 }
 
 const mapStateToProps = reduxState => {
-  return { email: reduxState.user.email };
+  return {
+    user: reduxState.user
+  };
 };
 
 export default connect(mapStateToProps, { updateUserDetails, getUserDetails })(

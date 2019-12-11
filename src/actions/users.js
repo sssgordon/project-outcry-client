@@ -31,10 +31,11 @@ function setUserDetails(payload) {
 }
 
 export const getUserDetails = email => dispatch => {
+  console.log(email);
   request
     .get(`${baseUrl}/users/${email}`)
     .then(response => {
-      console.log("get user details response", response);
+      // console.log("get user details response", response);
       const action = setUserDetails(response.body);
       dispatch(action);
     })

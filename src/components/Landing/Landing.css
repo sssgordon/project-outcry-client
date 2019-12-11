@@ -6,6 +6,7 @@
     opacity: 1;
   }
 }
+
 #landing-wrapper-parent {
   position: relative;
   width: 100vw;
@@ -15,17 +16,19 @@
 #landing-wrapper {
   position: absolute;
   width: 300px;
-  height: 100px;
+  height: 200px;
   /* padding: 10px; */
 
   position: absolute;
   top: 50%;
   left: 50%;
 
-  margin: -70px 0 0 -150px;
+  margin: -100px 0 0 -150px;
 
   border: white 3px solid;
   border-radius: 10px;
+
+  text-align: center;
 
   animation-name: fadeIn;
   animation-duration: 1.5s;
@@ -39,7 +42,23 @@
 
 #login-btn-wrapper button {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#landing-wrapper p {
+  position: relative;
+  top: 23px;
+  left: 5px;
+  color: white;
+  font-size: 25px;
+  font-family: "Couplet";
+}
+
+@font-face {
+  font-family: "Couplet";
+  src: local("Couplet"),
+    url("../../assets/Couplets-on-the-Spring-Festival-Font-Traditional-Chinese.ttf")
+      format("truetype");
 }

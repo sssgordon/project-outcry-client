@@ -23,6 +23,7 @@ class Landing extends Component {
       <div id="landing-wrapper-parent">
         <div id="landing-wrapper">
           <div id="login-btn-wrapper">
+            <p>登入帳號：</p>
             <GoogleLoginButton id="login-btn" />
             {detailsLink}
             {aliasLink}

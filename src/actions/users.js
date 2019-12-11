@@ -21,9 +21,30 @@ export const signUp = data => () => {
     .catch(console.error);
 };
 
+// user details
+export const SET_USER_DETAILS = "SET_USER_DETAILS";
+function setUserDetails(payload) {
+  return {
+    type: SET_USER_DETAILS,
+    payload
+  };
+}
+
+export const getUserDetails = email => dispatch => {
+  // console.log(email);
+  request
+    .get(`${baseUrl}/users/${email}`)
+    .then(response => {
+      // console.log("get user details response", response);
+      const action = setUserDetails(response.body);
+      dispatch(action);
+    })
+    .catch(console.error);
+};
+
 export const updateUserDetails = (data, email) => () => {
   request
-    .put(`${baseUrl}/users/${email}/details`)
+    .put(`${baseUrl}/users/${email}/update-details`)
     .send(data)
     .then(response => {
       console.log("update details response", response);

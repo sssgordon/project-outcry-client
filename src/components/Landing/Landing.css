@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes fadeInLink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
 #landing-wrapper-parent {
   position: relative;
   width: 100vw;
@@ -30,7 +39,7 @@
   text-align: center;
 
   animation-name: fadeIn;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 #login-btn-wrapper {
@@ -55,27 +64,66 @@
   font-family: "Couplet";
 }
 
-.hidden {
-  opacity: 0;
-}
-.fade-in {
-  color: white;
-  animation: fadeIn;
-  animation-duration: 1.5s;
-}
-
 #outcry {
   position: absolute;
   bottom: 105px;
   right: 130px;
   width: 400px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
-/* .outcry {
+.edit-user-details-hidden {
   position: absolute;
-  z-index: 100px;
-  width: 400px;
-  background: url("../../assets/outcry-white.png");
+  top: 20px;
+  right: 300px;
+  width: 250px;
+  opacity: 0;
+}
+
+.edit-user-details {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 250px;
+  opacity: 0.5;
+  transition: 0.3s;
+  animation: fadeInLink;
+  animation-duration: 1.5s;
+}
+
+.edit-user-details:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.edit-user-alias-hidden {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 250px;
+  opacity: 0;
+}
+
+.edit-user-alias {
+  position: absolute;
+  top: 55px;
+  left: 255px;
+  width: 250px;
+  opacity: 0.5;
+  transition: 0.3s;
+  animation: fadeInLink;
+  animation-duration: 1.5s;
+}
+
+.edit-user-alias:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* #outcry:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 } */
 
 @font-face {

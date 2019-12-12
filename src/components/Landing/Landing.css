@@ -24,12 +24,11 @@
 
 #landing-wrapper {
   position: absolute;
-  width: 300px;
-  height: 200px;
-
-  position: absolute;
   top: 50%;
   left: 50%;
+
+  width: 300px;
+  height: 200px;
 
   margin: -100px 0 0 -150px;
 
@@ -62,19 +61,6 @@
   color: white;
   font-size: 25px;
   font-family: "Couplet";
-}
-
-#logged-in {
-  display: inline;
-  font-size: 25px;
-  color: white;
-  font-family: "Couplet";
-}
-
-#user-name {
-  display: inline;
-  font-family: "Libre Baskerville", serif;
-  color: red;
 }
 
 #outcry {

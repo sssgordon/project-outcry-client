@@ -1,0 +1,94 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#alias-wrapper-parent {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#alias-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 300px;
+  height: 200px;
+
+  margin: -100px 0 0 -150px;
+
+  border: white 3px solid;
+  border-radius: 10px;
+
+  text-align: center;
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+#alias-form-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#enter-alias {
+  position: absolute;
+  top: 23px;
+  left: 70px;
+
+  font-family: "Couplet";
+  font-size: 25px;
+  color: white;
+}
+
+#alias-form-wrapper form {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#alias-form-wrapper input {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+#alias-form-wrapper button {
+  font-size: 12px;
+  font-family: "Libre Baskerville", sans-serif;
+  color: white;
+
+  background-color: transparent;
+
+  border: white 1px solid;
+  border-radius: 3px;
+
+  margin-top: 13px;
+  width: 70px;
+  height: 25px;
+  transition: 0.3s;
+}
+
+#alias-form-wrapper button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+@font-face {
+  font-family: "Couplet";
+  src: local("Couplet"),
+    url("../../assets/Couplets-on-the-Spring-Festival-Font-Traditional-Chinese.ttf")
+      format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400&display=swap");

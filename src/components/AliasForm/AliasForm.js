@@ -22,7 +22,7 @@ export default function AliasForm(props) {
           />
         </Link>
         <div id="alias-form-wrapper">
-          <p id="enter-alias">輸入個人代號:</p>
+          <p id="enter-alias">設定個人代號:</p>
           <form onSubmit={props.onSubmit}>
             <input
               onChange={props.onChange}

@@ -1,6 +1,7 @@
 import request from "superagent";
+import { baseUrl } from "../constants";
 
-const baseUrl = "http://localhost:4000";
+// const baseUrl = "http://localhost:4000";
 
 // create alias in user in db
 export const createAlias = (aliasObj, email) => () => {

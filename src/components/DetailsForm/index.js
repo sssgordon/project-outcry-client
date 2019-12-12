@@ -19,37 +19,7 @@ class DetailsFormContainer extends Component {
   };
 
   componentDidMount = () => {
-    // const {
-    //   email,
-    //   hkIdNumber,
-    //   gender,
-    //   dateOfBirth,
-    //   address,
-    //   phoneNumber,
-    //   emergencyContact,
-    //   emergencyContactNumber,
-    //   lawyerEmail,
-    //   otherEmail,
-    //   emailPassword,
-    //   getUserDetails
-    // } = this.props;
-
     this.props.getUserDetails(this.props.user.email);
-
-    // console.log("after thunk", this.state);
-    // this.setState({
-    //   hkIdNumber: hkIdNumber,
-    //   gender: gender,
-    //   dateOfBirth: dateOfBirth,
-    //   address: address,
-    //   phoneNumber: phoneNumber,
-    //   emergencyContact: emergencyContact,
-    //   emergencyContactNumber: emergencyContactNumber,
-    //   lawyerEmail: lawyerEmail,
-    //   otherEmail: otherEmail,
-    //   emailPassword: emailPassword,
-    //   loading: false
-    // });
   };
 
   componentDidUpdate(prevProps, prevState) {

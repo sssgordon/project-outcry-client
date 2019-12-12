@@ -2,38 +2,65 @@ import request from "superagent";
 
 const baseUrl = "http://localhost:4000";
 
-export const LOGIN = "LOGIN";
-function doLogin(payload) {
+// google login
+export const GOOGLE_LOGIN = "GOOGLE_LOGIN";
+export function googleLoginAction(payload) {
   return {
-    type: LOGIN,
+    type: GOOGLE_LOGIN,
     payload
   };
 }
 
-//Works!
-export const login = () => dispatch => {
+export const signUp = data => () => {
   request
-    .post(
-      "https://dialogflow.googleapis.com/v2/projects/lifeline-82492/agent/entityTypes/cd1fd866-ec8d-4c51-b447-92be3611a6ef/entities:batchCreate"
-    )
-    // .set("Access-Control-Allow-Origin", "http://localhost:3000")
-    .set(
-      "Authorization",
-      "Bearer ya29.ImC0B5Oze8wY8mbq5REDTNMhd_6xqJJmg1nqa6b_MkmriFevHn-v96adRlvZ9iOuMnCgLYKti8YV5MG3jUNjlzVjxO-etUPGGizdV5FRoUG7ri74W-TX1NHATXodKX170oQ"
-    )
-    .send({
-      entities: [
-        {
-          value: "David",
-          synonyms: []
-        }
-      ],
-      languageCode: ""
-    })
+    .post(`${baseUrl}/users`)
+    .send(data)
     .then(response => {
-      console.log("response", response);
-      // const action = doLogin();
-      // dispatch(action);
+      // console.log("Sign up response test", response);
     })
     .catch(console.error);
+};
+
+// user details
+export const SET_USER_DETAILS = "SET_USER_DETAILS";
+function setUserDetails(payload) {
+  return {
+    type: SET_USER_DETAILS,
+    payload
+  };
+}
+
+export const getUserDetails = email => dispatch => {
+  // console.log(email);
+  request
+    .get(`${baseUrl}/users/${email}`)
+    .then(response => {
+      // console.log("get user details response", response);
+      const action = setUserDetails(response.body);
+      dispatch(action);
+    })
+    .catch(console.error);
+};
+
+export const updateUserDetails = (data, email) => () => {
+  request
+    .put(`${baseUrl}/users/${email}/update-details`)
+    .send(data)
+    .then(response => {
+      console.log("update details response", response);
+    })
+    .catch(console.error);
+};
+
+// export const LOGIN = "LOGIN";
+// function doLogin(payload) {
+//   return {
+//     type: LOGIN,
+//     payload
+//   };
+// }
+
+//Works!
+export const test = () => dispatch => {
+  request.get(`${baseUrl}/sendMail`).catch(console.error);
 };

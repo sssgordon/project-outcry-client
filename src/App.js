@@ -1,16 +1,28 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { login } from "./actions/users";
+import AliasFormContainer from "./components/AliasForm";
+import DetailsFormContainer from "./components/DetailsForm";
+import { Route } from "react-router-dom";
+import Landing from "./components/Landing/Landing";
+import backgroundVideo from "./assets/sham-shui-po-bg-vid-2.mp4";
+import "./App.css";
 
 class App extends Component {
-  onClick = event => {
-    event.preventDefault();
-    this.props.login();
-  };
-
   render() {
-    return <button onClick={this.onClick}>Test</button>;
+    return (
+      <div id="background">
+        <video id="bg-vid" loop autoPlay muted preload="metadata">
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div id="background-overlay">
+          <Route exact path="/details" component={DetailsFormContainer} />
+          <Route exact path="/alias" component={AliasFormContainer} />
+          <Route exact path="/" component={Landing} />
+        </div>
+      </div>
+    );
   }
 }
 
-export default connect(null, { login })(App);
+export default connect(null)(App);

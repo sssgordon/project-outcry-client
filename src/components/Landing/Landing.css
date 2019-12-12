@@ -1,0 +1,137 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+#landing-wrapper-parent {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#landing-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 300px;
+  height: 200px;
+
+  margin: -100px 0 0 -150px;
+
+  border: white 3px solid;
+  border-radius: 10px;
+
+  text-align: center;
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+#login-btn-wrapper {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#login-btn-wrapper button {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#landing-wrapper p {
+  position: relative;
+  top: 23px;
+  left: 5px;
+  color: white;
+  font-size: 25px;
+  font-family: "Couplet";
+}
+
+#outcry {
+  position: absolute;
+  bottom: 105px;
+  right: 130px;
+  width: 400px;
+  opacity: 1;
+}
+
+.edit-user-details-hidden {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 250px;
+  opacity: 0;
+}
+
+.edit-user-details {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 250px;
+  opacity: 0.5;
+  transition: 0.3s;
+  animation: fadeInLink;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.edit-user-details:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.edit-user-alias-hidden {
+  position: absolute;
+  top: 55px;
+  right: 255px;
+  width: 250px;
+  opacity: 0;
+}
+
+.edit-user-alias {
+  position: absolute;
+  top: 55px;
+  left: 255px;
+  width: 250px;
+  opacity: 0.5;
+  transition: 0.3s;
+  animation: fadeInLink;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.edit-user-alias:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* #outcry:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+} */
+
+@font-face {
+  font-family: "Couplet";
+  src: local("Couplet"),
+    url("../../assets/Couplets-on-the-Spring-Festival-Font-Traditional-Chinese.ttf")
+      format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap");

@@ -113,7 +113,9 @@ export default function DetailsForm(props) {
                 />
               </Form.Group>
             </Form.Row>
-            <Button type="submit">Submit</Button>
+            <Button type="submit" variant="outline-light">
+              Submit
+            </Button>
           </Form>
         </div>
       </div>

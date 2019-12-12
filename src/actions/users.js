@@ -1,6 +1,7 @@
 import request from "superagent";
+import { baseUrl } from "../constants";
 
-const baseUrl = "http://localhost:4000";
+// const baseUrl = "http://localhost:4000";
 
 // google login
 export const GOOGLE_LOGIN = "GOOGLE_LOGIN";

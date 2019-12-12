@@ -13,13 +13,11 @@ export default function DetailsForm(props) {
         <Link to="/">
           <img className="outcry-details-page" src={outcry} alt="title" />
         </Link>
-        <Link to="/details">
-          <img
-            id="edit-user-details-details-page"
-            src={editUserDetails}
-            alt="edit-user-details"
-          />
-        </Link>
+        <img
+          id="edit-user-details-details-page"
+          src={editUserDetails}
+          alt="edit-user-details"
+        />
         <div id="details-form-wrapper">
           <Form onSubmit={props.onSubmit}>
             <Form.Row>

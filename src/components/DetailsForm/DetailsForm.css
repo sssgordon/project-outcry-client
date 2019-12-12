@@ -15,13 +15,13 @@
 
 #details-wrapper {
   position: absolute;
-  top: 40%;
+  top: 48%;
   left: 50%;
 
-  width: 700px;
-  height: 600px;
+  width: 650px;
+  height: 550px;
 
-  margin: -210px 0 0 -350px;
+  margin: -210px 0 0 -320px;
 
   border: white 3px solid;
   border-radius: 10px;
@@ -82,4 +82,43 @@ button.btn:hover {
   cursor: pointer;
   color: black;
   border: white 1px solid;
+}
+
+.outcry-details-page {
+  position: absolute;
+  bottom: 450px;
+  right: 475px;
+  width: 400px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.outcry-details-page:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#edit-user-details-details-page {
+  position: absolute;
+  top: 330px;
+  right: 650px;
+  width: 250px;
+  opacity: 1;
+}
+
+.edit-user-alias-details-page {
+  position: absolute;
+  top: 250px;
+  left: 603px;
+  width: 250px;
+  opacity: 0.5;
+  transition: 0.3s;
+  animation: fadeInLink;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.edit-user-alias-details-page:hover {
+  opacity: 1;
+  transition: 0.3s;
 }

@@ -1,11 +1,25 @@
 import React from "react";
 import { Form, Button, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import editUserDetails from "../../assets/edit-user-details-white.png";
+import outcry from "../../assets/outcry-white.png";
+import editAlias from "../../assets/edit-alias-white.png";
 import "./DetailsForm.css";
 
 export default function DetailsForm(props) {
   return (
     <div id="details-wrapper-parent">
       <div id="details-wrapper">
+        <Link to="/">
+          <img className="outcry-details-page" src={outcry} alt="title" />
+        </Link>
+        <Link to="/details">
+          <img
+            id="edit-user-details-details-page"
+            src={editUserDetails}
+            alt="edit-user-details"
+          />
+        </Link>
         <div id="details-form-wrapper">
           <Form onSubmit={props.onSubmit}>
             <Form.Row>
@@ -118,6 +132,13 @@ export default function DetailsForm(props) {
             </Button>
           </Form>
         </div>
+        <Link to="/alias">
+          <img
+            className="edit-user-alias-details-page"
+            src={editAlias}
+            alt="edit-user-alias"
+          />
+        </Link>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ class Landing extends Component {
       <div
         style={{
           position: "relative",
-          top: "18px",
+          top: "20px",
           animationName: "fadeIn",
           animationDuration: "0.5s",
           animationTimingFunction: "ease-in"
@@ -31,7 +31,7 @@ class Landing extends Component {
         </p>
       </div>
     ) : (
-      <div>
+      <div style={{ marginTop: "40px" }}>
         <p>登入帳號：</p>
         <GoogleLoginButton />
       </div>

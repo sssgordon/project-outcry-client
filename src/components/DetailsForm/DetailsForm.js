@@ -1,71 +1,145 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { Form, Button, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import editUserDetails from "../../assets/edit-user-details-white.png";
+import outcry from "../../assets/outcry-white.png";
+import editAlias from "../../assets/edit-alias-white.png";
+import "./DetailsForm.css";
 
 export default function DetailsForm(props) {
   return (
-    <Fragment>
-      <form onSubmit={props.onSubmit}>
-        <input
-          onChange={props.onChange}
-          value={props.values.hkIdNumber}
-          name="hkIdNumber"
-          placeholder="HKID number"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.gender}
-          name="gender"
-          placeholder="Gender"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.dateOfBirth}
-          name="dateOfBirth"
-          placeholder="YYYY-MM-DD"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.address}
-          name="address"
-          placeholder="Address"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.phoneNumber}
-          name="phoneNumber"
-          placeholder="Phone number"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.emergencyContact}
-          name="emergencyContact"
-          placeholder="Who is your emergency contact?"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.emergencyContactNumber}
-          name="emergencyContactNumber"
-          placeholder="What is his/her contact number?"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.lawyerEmail}
-          name="lawyerEmail"
-          placeholder="Lawyer email"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.otherEmail}
-          name="otherEmail"
-          placeholder="Other email"
-        />
-        <input
-          onChange={props.onChange}
-          value={props.values.emailPassword}
-          name="emailPassword"
-          placeholder="Your gmail password"
-        />
-        <button type="submit">Submit</button>
-      </form>
-    </Fragment>
+    <div id="details-wrapper-parent">
+      <div id="details-wrapper">
+        <Link to="/">
+          <img className="outcry-details-page" src={outcry} alt="title" />
+        </Link>
+        <Link to="/details">
+          <img
+            id="edit-user-details-details-page"
+            src={editUserDetails}
+            alt="edit-user-details"
+          />
+        </Link>
+        <div id="details-form-wrapper">
+          <Form onSubmit={props.onSubmit}>
+            <Form.Row>
+              <Form.Group as={Col} controlId="hkIdNumber">
+                <Form.Label>香港身分證號碼</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="hkIdNumber"
+                  value={props.values.hkIdNumber}
+                  placeholder="HKID number"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="dateOfBirth">
+                <Form.Label>出生日期</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  value={props.values.dateOfBirth}
+                  name="dateOfBirth"
+                  type="date"
+                />
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+              <Form.Group as={Col} controlId="address">
+                <Form.Label>住宅地址</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="address"
+                  value={props.values.address}
+                  placeholder="Home address"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="gender">
+                <Form.Label>性別</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="gender"
+                  value={props.values.gender}
+                  placeholder="M / F"
+                />
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+              <Form.Group as={Col} controlId="phoneNumber">
+                <Form.Label>電話號碼</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="phoneNumber"
+                  value={props.values.phoneNumber}
+                  placeholder="Phone number"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="emailPassword">
+                <Form.Label>電郵密碼</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="emailPassword"
+                  value={props.values.emailPassword}
+                  placeholder="Gmail password"
+                  type="password"
+                />
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+              <Form.Group as={Col} controlId="emergencyContact">
+                <Form.Label>緊急聯絡人</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="emergencyContact"
+                  value={props.values.emergencyContact}
+                  placeholder="Emergency contact relation"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="emergencyContactNumber">
+                <Form.Label>聯絡號碼</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="emergencyContactNumber"
+                  value={props.values.emergencyContactNumber}
+                  placeholder="Contact number"
+                />
+              </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+              <Form.Group as={Col} controlId="lawyerEmail">
+                <Form.Label>律師電郵</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="lawyerEmail"
+                  value={props.values.lawyerEmail}
+                  placeholder="Lawyer email"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="otherEmail">
+                <Form.Label>其他電郵</Form.Label>
+                <Form.Control
+                  onChange={props.onChange}
+                  name="otherEmail"
+                  value={props.values.otherEmail}
+                  placeholder="Other email"
+                />
+              </Form.Group>
+            </Form.Row>
+            <Button type="submit" variant="outline-light">
+              Submit
+            </Button>
+          </Form>
+        </div>
+        <Link to="/alias">
+          <img
+            className="edit-user-alias-details-page"
+            src={editAlias}
+            alt="edit-user-alias"
+          />
+        </Link>
+      </div>
+    </div>
   );
 }

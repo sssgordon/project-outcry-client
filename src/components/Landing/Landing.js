@@ -6,21 +6,37 @@ import outcryWhite from "../../assets/outcry-white.png";
 import editUserDetails from "../../assets/edit-user-details-white.png";
 import editAlias from "../../assets/edit-alias-white.png";
 import "./Landing.css";
+import { inheritLeadingComments } from "@babel/types";
 
 class Landing extends Component {
   render() {
     const { user } = this.props;
 
-    // const detailsLink = (
-    //   <Link to="/details" style={{ textDecoration: "none" }}>
-    //     <p className={`${user.email ? "fade-in" : "hidden"}`}>Details</p>
-    //   </Link>
-    // );
-    // const aliasLink = user.email && (
-    //   <Link to="/alias">
-    //     <p>Alias</p>
-    //   </Link>
-    // );
+    const loginDisplay = user.email ? (
+      <div
+        style={{
+          position: "relative",
+          top: "18px",
+          animationName: "fadeIn",
+          animationDuration: "0.5s",
+          animationTimingFunction: "ease-in"
+        }}
+      >
+        <p
+          style={{ fontFamily: "Couplet", fontSize: "40px", margin: "15px 0" }}
+        >
+          歡迎
+        </p>
+        <p style={{ fontFamily: "Libre Baskerville", margin: "15px 0" }}>
+          {user.givenName}
+        </p>
+      </div>
+    ) : (
+      <div>
+        <p>登入帳號：</p>
+        <GoogleLoginButton />
+      </div>
+    );
 
     return (
       <Fragment>
@@ -36,10 +52,7 @@ class Landing extends Component {
                 alt="edit-user-details"
               />
             </Link>
-            <div id="login-btn-wrapper">
-              <p>登入帳號：</p>
-              <GoogleLoginButton />
-            </div>
+            <div id="login-btn-wrapper">{loginDisplay}</div>
             <Link to="/alias">
               <img
                 className={`${

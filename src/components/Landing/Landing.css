@@ -64,6 +64,19 @@
   font-family: "Couplet";
 }
 
+#logged-in {
+  display: inline;
+  font-size: 25px;
+  color: white;
+  font-family: "Couplet";
+}
+
+#user-name {
+  display: inline;
+  font-family: "Libre Baskerville", serif;
+  color: red;
+}
+
 #outcry {
   position: absolute;
   bottom: 105px;
@@ -90,6 +103,7 @@
   transition: 0.3s;
   animation: fadeInLink;
   animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 
 .edit-user-details:hover {
@@ -99,8 +113,8 @@
 
 .edit-user-alias-hidden {
   position: absolute;
-  top: 20px;
-  right: 300px;
+  top: 55px;
+  right: 255px;
   width: 250px;
   opacity: 0;
 }
@@ -114,6 +128,7 @@
   transition: 0.3s;
   animation: fadeInLink;
   animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 
 .edit-user-alias:hover {

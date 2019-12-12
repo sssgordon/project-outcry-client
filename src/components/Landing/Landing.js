@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import GoogleLoginButton from "../GoogleLoginButton";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import outcryWhite from "../../assets/outcry-white.png";
+import outcry from "../../assets/outcry-white.png";
 import editUserDetails from "../../assets/edit-user-details-white.png";
 import editAlias from "../../assets/edit-alias-white.png";
 import "./Landing.css";
@@ -40,7 +40,7 @@ class Landing extends Component {
     return (
       <div id="landing-wrapper-parent">
         <div id="landing-wrapper">
-          <img id="outcry" src={outcryWhite} alt="title" />
+          <img id="outcry" src={outcry} alt="title" />
           <Link to="/details">
             <img
               className={`${

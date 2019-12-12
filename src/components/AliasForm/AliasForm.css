@@ -41,7 +41,7 @@
 #enter-alias {
   position: absolute;
   top: 23px;
-  left: 70px;
+  left: 71px;
 
   font-family: "Couplet";
   font-size: 25px;
@@ -56,14 +56,14 @@
 }
 
 #alias-form-wrapper input {
-  /* text-align: center; */
+  text-align: center;
   font-size: 15px;
   font-family: "Libre Baskerville", sans-serif;
 
   border-radius: 3px;
   border: 1px white solid;
 
-  width: 150px;
+  width: 155px;
   height: 28px;
 }
 

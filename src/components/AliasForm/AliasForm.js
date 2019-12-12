@@ -28,7 +28,7 @@ export default function AliasForm(props) {
               onChange={props.onChange}
               value={props.value}
               name="alias"
-              placeholder="   Enter your alias"
+              placeholder="Enter your alias"
             />
             <button type="submit">Submit</button>
           </form>

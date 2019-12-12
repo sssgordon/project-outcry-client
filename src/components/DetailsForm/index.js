@@ -85,7 +85,6 @@ class DetailsFormContainer extends Component {
           onSubmit={this.onSubmit}
           values={this.state}
         />
-        <Link to="/">Landing</Link>
       </Fragment>
     );
   }

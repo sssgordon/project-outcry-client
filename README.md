@@ -5,6 +5,7 @@ Outcry is an app made for Hong Kong protestors to inform their lawyers the momen
 ## Technologies
 
 * ReactJS
+* Google login
 * Express
 * Sequelize
 * Nodemailer

@@ -1,6 +1,6 @@
 # What is Outcry?
 
-Outcry is an app made for Hong Kong protestors to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will send an email to the user's lawyer at the moment of need.
+Outcry is an app made for Hong Kong protestors to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
 
 ## Technologies
 

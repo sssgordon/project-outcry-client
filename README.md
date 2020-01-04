@@ -32,7 +32,7 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 * [Nodemailer](https://github.com/sssgordon/project-outcry-server/blob/master/email/route.js) :star2:
 * [React-Bootstrap](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/DetailsForm/DetailsForm.js) :star2:
 
-:star2: New technology learned during Hackathon
+:star2: *New technology learned during Hackathon*
 
 ## Goals for this project
 

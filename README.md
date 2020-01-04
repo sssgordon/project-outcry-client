@@ -8,7 +8,7 @@ Project Outcry is an app made for Hong Kong protestors :construction_worker: to 
 
 Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. *If you have knowledge about Google OAuth 2.0, please let me know! My contact is in the final section below.*
 
-## Table of contents:
+## Table of contents
 
 * [Technology used](#technology-used)
 * [Goals for this project](#goals-for-this-project)

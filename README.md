@@ -4,9 +4,9 @@
 
 ## What this app is about
 
-Project Outcry is an app made for :construction_worker: Hong Kong protestors to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
+Project Outcry is an app made for :construction_worker:Hong Kong protestors to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
 
-Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. *If you have knowledge about Google OAuth 2.0, please let me know! gordondashso@gmail.com*
+Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. *If you have knowledge about Google OAuth 2.0, please let me know! My contact is in the final section below.*
 
 ## Table of contents:
 
@@ -31,6 +31,8 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 :star2: New technology learned during Hackathon
 
 ## Goals for this project
+
+In this Hackathon, participants were asked to use a new technology *not taught in the academy*. I mainly worked with Google Dialogflow alongside a couple more new ones (see above). I learned by reading the documentations and watching YouTube videos. In the end, the goal of this Hackathon is to practice learning new technology independently, apply what we learned in the academy, and have fun!
 
 ## Technical details and repos
 

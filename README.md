@@ -40,17 +40,17 @@ In this Hackathon, participants were asked to produce a full-stack app using a n
 
 * practice learning new technology independently
 * apply what we learned in the academy
-* have fun!
+* have fun! :tada:
 
 ## Technical details and server repo
 
 This is how the app is meant to be used:
 * Imagine you're a protestor engaging in civil disobedience :construction_worker:
 * Before taking to the streets, go to the client website and sign up
-* Input your personal details, **lawyer's email**, and a **unique alias**
+* Input your personal details, **lawyer's email**, and a **unique alias** :pencil2:
 * The client will send a POST request to the Express server and create a new user
 * When you create an alias, the client sends a PUT request to the Google Dialogflow API, storing a new $name entity in the API server
-* When you get arrested, shout to Google Assistant: _**"I am < alias >!"**_
+* When you get arrested, shout to Google Assistant: _**"I am < alias >!"**_ :mega:
 * Google Dialogflow will immediately match the $name entity in the API with your alias in the database
 * When there is a match, the Express server will send an email to your specified lawyer email address using nodemailer, along with the filled-in personal details
 * You may even add to your Google Assistant assertion the **location** and/or the **police station** you're being escorted to, and Google Dialogflow is smart enough to include those in the email to your lawyer
@@ -66,7 +66,7 @@ This mvp is still a work in progress. In order to build my ideal version, there 
 * Nodemailer alternative that better handles authorization issues with major email services
 * Turning this into a mobile app (React Native?)
 
-_If you wish to contribute to this project, hit me up at gordondashso@gmail.com!_
+_If you wish to contribute to this project, hit me up at :email: gordondashso@gmail.com_
 
 ## Misc
 

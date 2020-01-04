@@ -4,7 +4,7 @@
 
 ## What this app is about
 
-Project Outcry is an app made for :construction_worker:Hong Kong protestors to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
+Project Outcry is an app made for Hong Kong protestors :construction_worker: to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
 
 Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. *If you have knowledge about Google OAuth 2.0, please let me know! My contact is in the final section below.*
 
@@ -22,6 +22,7 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 * [React]()
 * [Redux]()
 * [Express]()
+    * [REST API]()
 * [Sequelize]()
 * [Google Dialogflow]() :star2:
 * [Google login]() :star2:
@@ -40,9 +41,11 @@ This is how the app is meant to be used:
 * Imagine you're a protestor engaging in civil disobedience :construction_worker:
 * Before taking to the streets, go to the client website and sign up
 * Input your personal details, **lawyer's email**, and a **unique alias**
+* The client will send a POST request to the Express server and create a new user
+* When you create an alias, the client sends a PUT request to the Google Dialogflow API, storing a new $name variable in the API server
 * When you get arrested, shout to Google Assistant: _**"I am < alias >!"**_
-* Google Dialogflow will immediately match the alias with the signed-up user in the database
-* The server will send an email to the user's specified lawyer email address using nodemailer, along with the filled-in personal details
+* Google Dialogflow will immediately match the $name variable in the API with your alias in the database
+* When there is a match, the Express server will send an email to your specified lawyer email address using nodemailer, along with the filled-in personal details
 * The lawyer is notified and looks for you in the police station
 
 The app consists of a React client (this repo), an Express server connected to a Sequelize database ([server repo](https://github.com/sssgordon/lifeline-server)), and a Google Dialogflow interface that links the user to Google Assistant ([dialogflow repo](#)).

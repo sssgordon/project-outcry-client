@@ -48,7 +48,7 @@ This is how the app is meant to be used:
 * When there is a match, the Express server will send an email to your specified lawyer email address using nodemailer, along with the filled-in personal details
 * The lawyer is notified and looks for you in the police station
 
-The app consists of a React client (this repo), an Express server connected to a Sequelize database ([server repo](https://github.com/sssgordon/lifeline-server)), and a Google Dialogflow interface that links the user to Google Assistant ([dialogflow repo](#)).
+The app consists of a React client (this repo), an Express server connected to a Sequelize database ([server repo](https://github.com/sssgordon/lifeline-server)), and a Google Dialogflow interface that links the user to Google Assistant ([Dialogflow repo](#)).
 
 ## Work in progress
 

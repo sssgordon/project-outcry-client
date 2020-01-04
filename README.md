@@ -33,7 +33,7 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 
 ## Goals for this project
 
-In this Hackathon, participants were asked to use a new technology *not taught in the academy*. I mainly worked with Google Dialogflow alongside a couple more new ones (see above). I learned by reading the documentations and watching YouTube videos. In the end, the goal of this Hackathon is to practice learning new technology independently, apply what we learned in the academy, and have fun!
+In this Hackathon, participants were asked to produce a full-stack app using a new technology *not taught in the academy*. I mainly worked with Google Dialogflow alongside a couple more new ones (see above). I learned by reading the documentations and watching YouTube videos. In the end, the goal of this Hackathon is to practice learning new technology independently, apply what we learned in the academy, and have fun!
 
 ## Technical details and repos
 

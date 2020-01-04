@@ -21,12 +21,12 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 
 * [React](https://github.com/sssgordon/project-outcry-client/blob/master/src/App.js)
 * [Redux](https://github.com/sssgordon/project-outcry-client/tree/master/src/actions)
-* [Express]()
-    * [REST API]()
-* [Sequelize]()
-* [Google Dialogflow]() :star2:
+* [Express](https://github.com/sssgordon/project-outcry-server/blob/master/index.js)
+    * [REST API](https://github.com/sssgordon/project-outcry-server/blob/master/user/route.js)
+* [Sequelize](https://github.com/sssgordon/project-outcry-server/blob/master/user/model.js)
+* [Google Dialogflow](https://github.com/sssgordon/project-outcry-server/blob/master/dialogflow/route.js) :star2:
 * [Google Login](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/GoogleLoginButton.js) :star2:
-* [Nodemailer]() :star2:
+* [Nodemailer](https://github.com/sssgordon/project-outcry-server/blob/master/email/route.js) :star2:
 * [React-Bootstrap](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/DetailsForm/DetailsForm.js) :star2:
 
 :star2: New technology learned during Hackathon

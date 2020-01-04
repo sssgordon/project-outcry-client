@@ -19,15 +19,15 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 
 :eyes::point_down: **Click links to see samples in this project** :point_down::eyes:
 
-* [React]()
-* [Redux]()
+* [React](https://github.com/sssgordon/project-outcry-client/blob/master/src/App.js)
+* [Redux](https://github.com/sssgordon/project-outcry-client/tree/master/src/actions)
 * [Express]()
     * [REST API]()
 * [Sequelize]()
 * [Google Dialogflow]() :star2:
-* [Google login]() :star2:
+* [Google Login](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/GoogleLoginButton.js) :star2:
 * [Nodemailer]() :star2:
-* [Bootstrap]() :star2:
+* [React-Bootstrap](https://github.com/sssgordon/project-outcry-client/blob/master/src/components/DetailsForm/DetailsForm.js) :star2:
 
 :star2: New technology learned during Hackathon
 

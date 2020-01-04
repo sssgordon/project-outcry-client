@@ -1,0 +1,9 @@
+{
+  "id": "19751426-0c9b-41a0-97b8-dbb62ce76815",
+  "name": "hong_kong_police_station",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

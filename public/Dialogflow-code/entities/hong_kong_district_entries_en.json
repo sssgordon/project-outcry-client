@@ -1,0 +1,130 @@
+[
+  {
+    "value": "Central and West District",
+    "synonyms": [
+      "Central and West District",
+      "Central District",
+      "West District",
+      "Central"
+    ]
+  },
+  {
+    "value": "Eastern District",
+    "synonyms": [
+      "Eastern District"
+    ]
+  },
+  {
+    "value": "Southern District",
+    "synonyms": [
+      "Southern District"
+    ]
+  },
+  {
+    "value": "Wan Chai District",
+    "synonyms": [
+      "Wan Chai District",
+      "Wan Chai"
+    ]
+  },
+  {
+    "value": "Kowloon City District",
+    "synonyms": [
+      "Kowloon City District",
+      "Kowloon",
+      "Kowloon City"
+    ]
+  },
+  {
+    "value": "Kwun Tong District",
+    "synonyms": [
+      "Kwun Tong District",
+      "Kwun Tong"
+    ]
+  },
+  {
+    "value": "Sham Shui Po District",
+    "synonyms": [
+      "Sham Shui Po District",
+      "Sham Shui Po"
+    ]
+  },
+  {
+    "value": "Wong Tai Sin District",
+    "synonyms": [
+      "Wong Tai Sin District",
+      "Wong Tai Sin"
+    ]
+  },
+  {
+    "value": "Yau Tsim Mong District",
+    "synonyms": [
+      "Yau Tsim Mong District",
+      "Yau Ma Tei",
+      "Tsim Sha Tsui",
+      "Mong Kok"
+    ]
+  },
+  {
+    "value": "Island District",
+    "synonyms": [
+      "Island District"
+    ]
+  },
+  {
+    "value": "Kwai Tsing District",
+    "synonyms": [
+      "Kwai Tsing District",
+      "Kwai Tsing"
+    ]
+  },
+  {
+    "value": "North District",
+    "synonyms": [
+      "North District"
+    ]
+  },
+  {
+    "value": "Sai Kung District",
+    "synonyms": [
+      "Sai Kung District",
+      "Sai Kung"
+    ]
+  },
+  {
+    "value": "Shatin District",
+    "synonyms": [
+      "Shatin District",
+      "Shatin",
+      "New Town Plaza"
+    ]
+  },
+  {
+    "value": "Tai Po District",
+    "synonyms": [
+      "Tai Po District",
+      "Tai Po"
+    ]
+  },
+  {
+    "value": "Tsuen Wan District",
+    "synonyms": [
+      "Tsuen Wan District",
+      "Tsuen Wan"
+    ]
+  },
+  {
+    "value": "Tuen Mun District",
+    "synonyms": [
+      "Tuen Mun District",
+      "Tuen Mun"
+    ]
+  },
+  {
+    "value": "Yuen Long District",
+    "synonyms": [
+      "Yuen Long District",
+      "Yuen Long"
+    ]
+  }
+]

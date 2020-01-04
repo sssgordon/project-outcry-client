@@ -1,0 +1,82 @@
+[
+  {
+    "value": "Central District Police Station",
+    "synonyms": [
+      "Central District Police Station",
+      "Central Police Station",
+      "Central"
+    ]
+  },
+  {
+    "value": "Waterfront District Police Station",
+    "synonyms": [
+      "Waterfront District Police Station",
+      "Waterfront",
+      "Waterfront Police Station"
+    ]
+  },
+  {
+    "value": "Peak District Police Station",
+    "synonyms": [
+      "Peak District Police Station",
+      "The Peak",
+      "Peak",
+      "Peak Police Station"
+    ]
+  },
+  {
+    "value": "Western District Police Station",
+    "synonyms": [
+      "Western District Police Station",
+      "Western Police Station",
+      "Western"
+    ]
+  },
+  {
+    "value": "Aberdeen District Police Station",
+    "synonyms": [
+      "Aberdeen",
+      "Aberdeen Police Station"
+    ]
+  },
+  {
+    "value": "Stanley District Police Station",
+    "synonyms": [
+      "Stanley District Police Station",
+      "Stanley",
+      "Stanley Police Station"
+    ]
+  },
+  {
+    "value": "Wan Chai District Police Station",
+    "synonyms": [
+      "Wan Chai District Police Station",
+      "Wan Chai",
+      "Wan Chai Police Station"
+    ]
+  },
+  {
+    "value": "Happy Valley District Police Station",
+    "synonyms": [
+      "Happy Valley",
+      "Happy Valley District Police Station",
+      "Happy Valley Police Station"
+    ]
+  },
+  {
+    "value": "North Point District Police Station",
+    "synonyms": [
+      "North Point District Police Station",
+      "North Point Police Station",
+      "North Point"
+    ]
+  },
+  {
+    "value": "Chai Wan District Police Station",
+    "synonyms": [
+      "Chai Wan District Police Station",
+      "Chai Wan",
+      "Chai Wan Police Station"
+    ]
+  }
+]

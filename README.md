@@ -6,7 +6,9 @@
 
 Project Outcry is an app made for Hong Kong protestors :construction_worker: to inform their lawyers the moment they get arrested. They only need to sign up on the website with a unique alias and tell that to Google Assistant at the moment of arrest. Outcry will immediately send an email to the user's lawyer.
 
-Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. *If you have knowledge about Google OAuth 2.0, please let me know! My contact is in the final section below.*
+Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorited app by popular vote :trophy: This is a minimum viable product and a work in progress. 
+
+*If you have knowledge about Google OAuth 2.0, please let me know! My contact is in the final section below.*
 
 ## Table of contents
 

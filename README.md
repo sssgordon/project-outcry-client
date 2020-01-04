@@ -42,13 +42,14 @@ This is how the app is meant to be used:
 * Before taking to the streets, go to the client website and sign up
 * Input your personal details, **lawyer's email**, and a **unique alias**
 * The client will send a POST request to the Express server and create a new user
-* When you create an alias, the client sends a PUT request to the Google Dialogflow API, storing a new $name variable in the API server
+* When you create an alias, the client sends a PUT request to the Google Dialogflow API, storing a new $name entity in the API server
 * When you get arrested, shout to Google Assistant: _**"I am < alias >!"**_
-* Google Dialogflow will immediately match the $name variable in the API with your alias in the database
+* Google Dialogflow will immediately match the $name entity in the API with your alias in the database
 * When there is a match, the Express server will send an email to your specified lawyer email address using nodemailer, along with the filled-in personal details
-* The lawyer is notified and looks for you in the police station
+* You may even add to your Google Assistant assertion the **location** and/or the **police station** you're being escorted to, and Google Dialogflow is smart enough to include those in the email to your lawyer
+* The lawyer is notified and looks for you in the police station (sooner if this is specified)
 
-The app consists of a React client (this repo), an Express server connected to a Sequelize database ([server repo](https://github.com/sssgordon/project-outcry-server)), and a Google Dialogflow interface that links the user to Google Assistant ([Dialogflow repo](#)).
+The app consists of a React client (this repo), an Express server connected to a Sequelize database ([server repo](https://github.com/sssgordon/project-outcry-server)), and a Google Dialogflow interface that links the user to Google Assistant ([Dialogflow code exported from the API](https://github.com/sssgordon/project-outcry-client/tree/master/public/Dialogflow-code)).
 
 ## Work in progress
 

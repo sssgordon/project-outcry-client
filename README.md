@@ -14,7 +14,7 @@ Built for a 4-day Hackathon at Codaisseur, this app won the second-most-favorite
 
 * [Technology used](#technology-used)
 * [Goals for this project](#goals-for-this-project)
-* [Technical details and repos](#technical-details-and-repo)
+* [Technical details and server repo](#technical-details-and-server-repo)
 * [Work in progress](#work-in-progress)
 * [Misc](#misc)
 
